@@ -632,13 +632,13 @@ export default function HomePage() {
       {/* Section 1: Hero */}
       <section className="hp-hero">
         <div className="hp-hero-inner">
-          <span className="hp-eyebrow">中小企業の経営判断を、数字から整える</span>
+          <span className="hp-eyebrow">複雑な経理財務をシンプルに・わかりやすく</span>
           <h1 className="hp-h1">
             数字を見ているのに、<br />
             次の判断に迷う会社へ。
           </h1>
           <p className="hp-hero-lead">
-            利益は出ている。試算表もある。けれど、資金繰り、銀行への説明、月次の打ち手が、まだはっきりしない。
+            利益は出てるはず。毎月経理データも作ってる。でも、資金繰り、投資アクション、中長期的な成長への不安。
           </p>
           <p className="hp-hero-lead">
             九十九アドバイザリーは、数字と論点を整理し、経営判断を進めやすい形へ整えるための支援を行っています。
@@ -650,7 +650,7 @@ export default function HomePage() {
           </div>
           <div className="hp-cta-row">
             <Link href="/contact/" className="hp-btn-primary">
-              お問い合わせフォームへ
+              相談フォームへ
             </Link>
             <Link href="/services/" className="hp-btn-secondary">
               サービス一覧を見る
@@ -664,7 +664,7 @@ export default function HomePage() {
         <div className="hp-problems-inner">
           <p className="hp-kicker">よくある悩み</p>
           <h2 className="hp-heading">こんな状態で、止まっていませんか</h2>
-          <p className="hp-lead">経営者・財務担当者からよくお聞きする5つの課題です。</p>
+          <p className="hp-lead">経営者・経理担当者からよくお聞きする5つの課題です。</p>
           <div className="hp-problem-shell">
             <div className="hp-problem-side">
               <span className="hp-problem-side-badge">5つの相談テーマ</span>
@@ -677,12 +677,6 @@ export default function HomePage() {
                 資金繰り、優先順位、社内外への説明準備。
                 課題はひとつだけでなく、複数が重なって現れることがよくあります。
               </p>
-              <div className="hp-problem-side-note">
-                <span className="hp-problem-side-note-title">まず整えること</span>
-                <p className="hp-problem-side-note-text">
-                  数字を増やすことではなく、いま判断に必要な視点を揃えて見える形にすることです。
-                </p>
-              </div>
             </div>
             <ul className="hp-problem-list">
               {PROBLEMS.map(({ tag, text }, i) => (
@@ -703,7 +697,7 @@ export default function HomePage() {
       <section className="hp-about">
         <div className="hp-about-inner">
           <p className="hp-kicker">九十九アドバイザリーとは</p>
-          <h2 className="hp-heading">数字があることと、判断できることは、同じではありません</h2>
+          <h2 className="hp-heading">現代の経営では、経理・財務は単なるバックオフィスではありません。</h2>
           <p className="hp-body">
             決算書、試算表、資金繰り表。必要な情報が手元にあっても、判断しやすい形に整理されていなければ、次の一手は決めにくくなります。
           </p>
@@ -872,7 +866,7 @@ export default function HomePage() {
 
           <div className="hp-final-btns">
             <Link href="/contact/" className="hp-btn-cta-primary">
-              お問い合わせフォームへ
+              相談フォームへ
             </Link>
             <Link href="/services/" className="hp-btn-cta-secondary">
               サービス一覧を見る

@@ -398,7 +398,7 @@ export default function ServicesPage() {
                 <Link href="/seizo/" className="sv-menu-link">財務健康診断 →</Link>
                 <Link href="/cashflow/" className="sv-menu-link">資金繰り診断 →</Link>
               </div>
-              <Link href="/contact/" className="sv-menu-btn">診断を申し込む →</Link>
+              <Link href="/contact/?type=診断支援" className="sv-menu-btn">診断を申し込む →</Link>
             </div>
 
             {/* Card B: 月次整理 */}
@@ -414,7 +414,7 @@ export default function ServicesPage() {
                 <Link href="/monthly-report/" className="sv-menu-link">月次経営レポート →</Link>
                 <Link href="/bank-plan/" className="sv-menu-link">銀行向け事業計画 →</Link>
               </div>
-              <Link href="/contact/" className="sv-menu-btn">月次整理を申し込む →</Link>
+              <Link href="/contact/?type=整理支援" className="sv-menu-btn">月次整理を申し込む →</Link>
             </div>
 
             {/* Card C: 月次レビュー */}
@@ -431,7 +431,7 @@ export default function ServicesPage() {
                 <Link href="/yojitsu/" className="sv-menu-link">予実管理伴走 →</Link>
                 <Link href="/meeting-design/" className="sv-menu-link">経営会議設計 →</Link>
               </div>
-              <Link href="/contact/" className="sv-menu-btn">月次レビューを申し込む →</Link>
+              <Link href="/contact/?type=伴走支援" className="sv-menu-btn">月次レビューを申し込む →</Link>
             </div>
           </div>
         </div>

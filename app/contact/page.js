@@ -1,16 +1,31 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { useRouter } from 'next/navigation';
+import { useSearchParams } from 'next/navigation';
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-const INITIAL_FORM = { company: '', name: '', email: '', message: '' };
+const INITIAL_FORM = { company: '', name: '', email: '', message: '', inquiryType: '' };
 const INITIAL_ERRORS = { company: '', name: '', email: '', message: '' };
 
 export default function ContactPage() {
+  return (
+    <Suspense>
+      <ContactPageInner />
+    </Suspense>
+  );
+}
+
+function ContactPageInner() {
   const router = useRouter();
+  const searchParams = useSearchParams();
+  const inquiryType = searchParams.get('type') || '';
   const [form, setForm] = useState(INITIAL_FORM);
+
+  useEffect(() => {
+    setForm((prev) => ({ ...prev, inquiryType }));
+  }, [inquiryType]);
   const [errors, setErrors] = useState(INITIAL_ERRORS);
   const [submitting, setSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState('');
@@ -233,6 +248,18 @@ export default function ContactPage() {
           )}
 
           <form onSubmit={handleSubmit} noValidate className="ct-form">
+            {form.inquiryType && (
+              <div className="ct-field">
+                <label className="ct-label">お問い合わせの種類</label>
+                <input
+                  type="text"
+                  value={form.inquiryType}
+                  readOnly
+                  className="ct-input"
+                  style={{ background: 'var(--surface)', color: 'var(--muted)', cursor: 'default' }}
+                />
+              </div>
+            )}
             <div className="ct-field">
               <label className="ct-label">
                 会社名<span className="ct-required">*</span>
