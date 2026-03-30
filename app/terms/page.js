@@ -1,5 +1,5 @@
 export const metadata = {
-  title: '利用規約 | 99advisory',
+  title: '利用規約 | 九十九アドバイザリー',
 };
 
 export default function TermsPage() {
@@ -12,7 +12,7 @@ export default function TermsPage() {
         </p>
 
         <p>
-          本規約は、keynes合同会社（以下「当社」）が提供する99advisory（以下「本サービス」）の利用条件を定めるものです。
+          本規約は、keynes合同会社（以下「当社」）が提供する九十九アドバイザリー（以下「本サービス」）の利用条件を定めるものです。
           本サービスをご利用いただくことで、本規約に同意したものとみなします。
         </p>
 

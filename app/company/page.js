@@ -1,5 +1,5 @@
 export const metadata = {
-  title: '会社情報 | 99advisory',
+  title: '会社情報 | 九十九アドバイザリー',
 };
 
 export default function CompanyPage() {
@@ -62,7 +62,7 @@ export default function CompanyPage() {
           }}
         >
           <p style={{ fontSize: 14, color: 'var(--muted)', lineHeight: 1.9, margin: 0 }}>
-            99advisoryは、中小企業の経営者・財務担当者を対象に、数字と論点を整理し、
+            九十九アドバイザリーは、中小企業の経営者・財務担当者を対象に、数字と論点を整理し、
             経営判断を進めやすい形へ整える支援を提供しています。
             財務健康診断・資金繰り診断・月次経営レポートなど、状況に合わせたサービスをご用意しています。
           </p>

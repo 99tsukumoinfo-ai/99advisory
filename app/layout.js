@@ -18,8 +18,8 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata = {
-  title: '99advisory',
-  description: '99advisory official website'
+  title: '九十九アドバイザリー',
+  description: '九十九アドバイザリー official website'
 };
 
 export default function RootLayout({ children }) {

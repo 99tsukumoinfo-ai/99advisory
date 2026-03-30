@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'プライバシーポリシー | 99advisory',
-  description: '99advisoryにおける個人情報の取り扱いについて説明します。',
+  title: 'プライバシーポリシー | 九十九アドバイザリー',
+  description: '九十九アドバイザリーにおける個人情報の取り扱いについて説明します。',
 };
 
 export default function PrivacyPage() {
@@ -13,7 +13,7 @@ export default function PrivacyPage() {
         </p>
 
         <p>
-          本サービス運営者（以下「運営者」）は、99advisory（以下「本サービス」）の運営にあたり、
+          本サービス運営者（以下「運営者」）は、九十九アドバイザリー（以下「本サービス」）の運営にあたり、
           ご利用者の個人情報を適切に取り扱うことを重要な責務と考えています。
           以下に、本サービスにおける個人情報の取り扱い方針を定めます。
         </p>

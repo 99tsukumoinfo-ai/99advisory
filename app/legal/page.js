@@ -1,5 +1,5 @@
 export const metadata = {
-  title: '特定商取引法に基づく表記 | 99advisory',
+  title: '特定商取引法に基づく表記 | 九十九アドバイザリー',
 };
 
 export default function LegalPage() {

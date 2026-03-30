@@ -101,7 +101,7 @@ export async function POST(request) {
     const userTemplate = userTemplateFn(filteredData);
 
     const adminResult = await resend.emails.send({
-      from: `99advisory <${config.fromEmail}>`,
+      from: `九十九アドバイザリー <${config.fromEmail}>`,
       to: config.adminEmail,
       replyTo: filteredData.email,
       subject: adminTemplate.subject,
@@ -110,7 +110,7 @@ export async function POST(request) {
     });
 
     const userResult = await resend.emails.send({
-      from: `99advisory <${config.fromEmail}>`,
+      from: `九十九アドバイザリー <${config.fromEmail}>`,
       to: filteredData.email,
       subject: userTemplate.subject,
       ...(userTemplate.text ? { text: userTemplate.text } : {}),

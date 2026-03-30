@@ -7,7 +7,7 @@ export default function SiteFooter() {
       <div className="container site-footer-inner">
         <div className="footer-grid">
           <div>
-            <div className="footer-title">99advisory</div>
+            <div className="footer-title">九十九アドバイザリー</div>
             <p className="page-lead" style={{ margin: 0, color: 'rgba(255,255,255,0.65)', fontSize: '14px' }}>
               中小企業向けに、管理会計・資金繰り・事業計画・経営判断の整理を支援する
               CFOアドバイザリーサービスです。
@@ -37,7 +37,7 @@ export default function SiteFooter() {
           </div>
         </div>
 
-        <div className="footer-copy">© 2026 99advisory</div>
+        <div className="footer-copy">© 2026 九十九アドバイザリー</div>
       </div>
     </footer>
   );

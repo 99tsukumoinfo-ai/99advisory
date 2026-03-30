@@ -6,7 +6,7 @@ export default function SiteHeader() {
     <header className="site-header">
       <div className="container site-header-inner">
         <Link href="/" className="site-logo">
-          99advisory
+          九十九アドバイザリー
           <span className="site-logo-sub">CFO Advisory for SMEs</span>
         </Link>
 
