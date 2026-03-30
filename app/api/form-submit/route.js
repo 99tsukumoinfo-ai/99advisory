@@ -117,7 +117,7 @@ export async function POST(request) {
       ...(userTemplate.html ? { html: userTemplate.html } : {}),
     });
 
-    await appendLeadRow([
+    try { await appendLeadRow([
       new Date().toISOString(),                                                      // 1. received_at
       config.serviceSlug,                                                            // 2. service_slug
       config.formType,                                                               // 3. form_type
@@ -131,7 +131,7 @@ export async function POST(request) {
       userResult?.data?.id ?? '',                                                    // 11. user_email_id
       sourcePath,                                                                    // 12. source_path
       JSON.stringify(filteredData),                                                  // 13. raw_json
-    ]);
+    ]); } catch (sheetsErr) { console.error('Sheets append failed:', sheetsErr.message); }
 
     return NextResponse.json({
       ok: true,
