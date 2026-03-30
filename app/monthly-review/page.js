@@ -15,12 +15,12 @@ import LPTrustNote from '@/components/lp/LPTrustNote';
 const PROBLEMS = [
   {
     no: '01',
-    title: '毎月試算表が届くが、どう読めばいいかわからない',
+    title: '税理士から毎月試算表が届くが、どう役立ててていいか困ってる',
     body: '数字は出ているが、何が良くて何が悪いのか、どう判断すればよいかまで整理できていない。'
   },
   {
     no: '02',
-    title: '数字を見ても、次に何をすべきかが判断できない',
+    title: '経営数字を見ているが、感覚的に理解できてない',
     body: '月次の数字は把握しているが、それをもとに何を動かすかの優先順位がつけられていない。'
   },
   {
@@ -30,12 +30,12 @@ const PROBLEMS = [
   },
   {
     no: '04',
-    title: '利益は出ているはずなのに、手元に残らないが続いている',
+    title: '利益は出ていても、残る現金が少ない気がする',
     body: '試算表では黒字でも、なぜ手元に残らないかを整理できておらず、判断の根拠が曖昧。'
   },
   {
     no: '05',
-    title: '外部の視点を入れながら、継続的に数字を見てほしい',
+    title: '経営者目線を持つ社員育成は難しく、一人で考えてても名案が浮かばない',
     body: '内部だけでは見えにくいことを、月次で整理・指摘してくれる外部の目が欲しい。'
   }
 ];
@@ -75,7 +75,7 @@ const DELIVERABLES = [
 
 const STEPS = [
   {
-    title: '前月の数字を共有いただく（試算表・資金繰り表）',
+    title: '前月の経理データを共有いただく（試算表・資金繰り表など）',
     body: '毎月決まったタイミングで数字資料をお送りいただきます。'
   },
   {
@@ -406,7 +406,7 @@ export default function MonthlyReviewPage() {
 
       <LPHero
         eyebrow="月次経営レビュー｜継続支援"
-        title="毎月の数字を、経営判断につなげる。"
+        title="経営判断を、大幅に軽減します。"
         lead="資料はある。数字も出ている。でも「今月何が起きたか」「次に何をすべきか」まで整理しきれていない。月に一度、数字を一緒に読み解き、次の判断と行動を整理する時間をつくります。"
         ctaLabel="お問い合わせ・ご相談"
         ctaHref="#form"
@@ -439,7 +439,7 @@ export default function MonthlyReviewPage() {
         items={PROBLEMS}
       />
 
-      <LPSection tone="stone" kicker="お渡しするもの" title="毎月のセッションで得られる3つの成果">
+      <LPSection tone="stone" kicker="お渡しするもの" title="毎月得られる3つの成果物">
         <div className="rv-deliv-grid">
           {DELIVERABLES.map((d) => (
             <div className={`rv-deliv-card rv-deliv-card-${d.color}`} key={d.title}>
@@ -459,7 +459,7 @@ export default function MonthlyReviewPage() {
         <LPFitGrid
           yesTitle="向いている会社"
           yesItems={[
-            '売上1億〜10億円規模',
+            '売上1億〜30億円規模',
             '経営者または財務担当者が月1回、数字に向き合える',
             '資料はあるが、そこから判断につなげる時間と視点が足りない',
             '継続的に数字を見る外部の目が欲しい'
